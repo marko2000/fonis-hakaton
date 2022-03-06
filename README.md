@@ -6,10 +6,10 @@ trougla rekurzivno podeljena u manje trouglove uklanjanjem središnjeg dela (tro
 
 U ovom rešenju nije korišćena nikakva eksterna biblioteka za geometriju i/ili fiziku.
 
-##Rešenje
+## Rešenje
 Rešenje je implementirano na jednostavan način koristeći HTML canvas, i dve JavaScript funkcija za iscrtavanje trouglova.
 
-###Algoritam
+### Algoritam
 
 Skripta koja sadrži algoritam se sastoji od pomoćne funkcije `createTriangle(position, edge)` koja iscrtava obojeni trougao
 na osnovu prosleđene pozicije trougla (**position**) i dužine njegove stranice(**edge**). Pozicija zadata kao parametar je *donje levo teme trougla*.
@@ -49,7 +49,7 @@ definisan sa `innerTrianglesPosition` promenljivom.
 Ukoliko uslov nije zadovoljen, tj. potrebno je deliti trougao još više u dubinu, tada se poziva rekurzivno ova funkcija
 i to nad pozicijama svakog od tri novodobijena trougla, sa odgovarajućim dužinama ivica i sa umanjenom dubinom.
 
-##Zaključak
+## Zaključak
 U rešavanju ovog zadatka korišćen je rekurzivno-iterativni pristup na taj način da se nad kolekcijom novih trouglova, 
 dobijenih podelom postojećeg, ponovo pozove funkcija kooja će svaki ponaosob dodatno izdeliti sve dok se ne zadovolji uslov dubine.
 
